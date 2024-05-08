@@ -1,6 +1,6 @@
-### ETLP-BASE Starter Kit Setup Guide
+# ETLP-BASE Starter Kit Setup Guide
 
-#### Prerequisites
+### Prerequisites
 
 Before setting up the ETLP-BASE boilerplate repository, ensure you have the following installed:
 
@@ -8,7 +8,7 @@ Before setting up the ETLP-BASE boilerplate repository, ensure you have the foll
    - You need to have Java installed on your system. Follow the [official Java installation guide](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html) to install JDK.
 
 
-#### Setting up Clojure and Leiningen
+### Setting up Clojure and Leiningen
 
 1. **Install Clojure**:
    - Clojure runs on the Java Virtual Machine (JVM). Follow the [official Clojure installation guide](https://clojure.org/guides/install_clojure#java) to set up Clojure on your system.
@@ -16,7 +16,7 @@ Before setting up the ETLP-BASE boilerplate repository, ensure you have the foll
 2. **Install Leiningen**:
    - Leiningen is a build automation tool for Clojure projects. Follow the instructions on the [Leiningen website](https://leiningen.org/#install) to install it on your system.
 
-#### Configuring ETLP-BASE Repository
+### Configuring ETLP-BASE Repository
 
 1. **Clone the Repository**:
    - Clone the ETLP-BASE repository from [GitHub](https://github.com/etlp-clj/etlp-base) to your local machine.
@@ -26,7 +26,7 @@ Before setting up the ETLP-BASE boilerplate repository, ensure you have the foll
    - Create a new file named `.env` by copying `env.tpl`.
    - Update the variables in `.env` file according to your ETLP-Mapper configurations.
 
-#### Building and Running the Data Connector
+### Building and Running the Data Connector
 
 1. **Setup Project**:
    - Run the `./bin/setup.sh` script in the repository root to set up the project dependencies.
@@ -39,7 +39,7 @@ Before setting up the ETLP-BASE boilerplate repository, ensure you have the foll
    - This command starts the data connector with 2 threads, listening for CSV rows on stdin, and applying Jute-based transformations to the data.
    - You can adjust the number of threads as per your requirements.
 
-#### Example Usage
+### Example Usage
 
 ```sh
 git clone https://github.com/your-repo-url.git
@@ -53,12 +53,6 @@ cat  ~/Downloads/input.csv |./bin/etl --threads 1 csv-stream
 Follow these steps to set up and run the ETLP-BASE boilerplate repository on your local machine. Customize the environment variables and configurations as needed for your ETLP-Mapper setup.
 
 ### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
 
 ## License
 
