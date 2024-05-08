@@ -1,0 +1,23 @@
+name: Clojure CI
+
+on:
+  push:
+    branches: [ feat-etl-clj feat-etl-clj-dev ]
+  pull_request:
+    branches: [ feat-etl-clj ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install dependencies
+      run: lein deps
+    - name: Build Jar
+      run: lein uberjar
+    - uses: actions/upload-artifact@v2
+      with:
+        name: etl-artifact
+        path: /home/runner/work/etl/etl/

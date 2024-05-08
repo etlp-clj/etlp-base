@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Add script to run program here.
+# Complete bin/setup so that after it is
+# run, bin/etl can be used to launch
+# it.
+
+# This variable contains absolute path of this `parking_lot` script
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
+
+# set -a
+# source "$DIR/../.env"
+# set +a
+
+echo $ETLP_MAPPER_SERVICE
+# -Detl.db.host=$ETL_DB_HOST -Detl.db.user=$ETL_DB_USER -Detl.db.password=$ETL_DB_PASSWORD -Detl.db.name=$ETL_DB_NAME -Detl.db.port=$ETL_DB_PORT
+export java_args=$ETLP_JMX_MEMORY
+# echo $java_args
+
+$DIR/etl.run "$@"
