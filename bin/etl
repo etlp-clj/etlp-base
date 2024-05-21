@@ -7,9 +7,9 @@
 # This variable contains absolute path of this `parking_lot` script
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 
-# set -a
-# source "$DIR/../.env"
-# set +a
+set -a
+source "$DIR/../.env"
+set +a
 
 echo $ETLP_MAPPER_SERVICE
 # -Detl.db.host=$ETL_DB_HOST -Detl.db.user=$ETL_DB_USER -Detl.db.password=$ETL_DB_PASSWORD -Detl.db.name=$ETL_DB_NAME -Detl.db.port=$ETL_DB_PORT

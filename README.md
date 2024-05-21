@@ -26,6 +26,15 @@ Before setting up the ETLP-BASE boilerplate repository, ensure you have the foll
    - Create a new file named `.env` by copying `env.tpl`.
    - Update the variables in `.env` file according to your ETLP-Mapper configurations.
 
+3. **Clone ETLP Mapper serivce**
+
+   - Clone the `etlp-mapper` from [GitHub](https://github.com/etlp-clj/etlp-mapper) to your local machine.
+   - Follow the instructions on the above serivce to setup and run locally.
+
+4. **Quick Start** 
+   - A quick start [tutorial](doc/intro.md), which illustrate how to utilize ETLP Smart Data Connectors to process CSV files using a low code data transformation logic. 
+
+
 ### Building and Running the Data Connector
 
 1. **Setup Project**:

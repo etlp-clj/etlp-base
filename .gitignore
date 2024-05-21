@@ -13,6 +13,7 @@ pom.xml.asc
 .hgignore
 .hg/
 *.txt
+.markdown-preview.html
 .DS_Store
 .calva
 bin/etl.run
